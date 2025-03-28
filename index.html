@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadia_info_Rch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ajouter un peu de style au conteneur du menu */
+        #menu-container {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Conteneur pour l'iframe */
+        #content {
+
+
+            padding: 0;
+        }
+
+        /* Style pour l'iframe */
+        #content iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            #content iframe {
+                width: 100%;
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu-container"></div>  <!-- Menu généré ici par menu.js -->
+
+    <div id="content">
+        <iframe name="iframe" src="pages/accueil.html"></iframe> <!-- Charger directement une page -->
+    </div>
+
+    <script src="script/menu.js"></script> <!-- Le script génère dynamiquement le menu -->
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chadia_job - Logement</title>
+    <script src="menu.js" defer></script>
+    <style>
+        /* Réutilisation du CSS de la page 1 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e3d58;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            padding: 20px;
+            display: block;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .vignettes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .vignettes a {
+            text-align: center;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        .vignettes img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .vignettes p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .vignettes a:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div id="page2" class="container">
+        <section class="section">
+            <h2>Logement à Bruxelles</h2>
+            <p>Voici déjà de quoi occuper tes journées d'étude. L'idée, c'est de multiplier les chances.</p>
+            <p>En attendant ma liste complète de sites officiels et reconnus, voici les premières pistes :</p>
+        </section>
+
+        <section class="section">
+            <h2>1. Logement social</h2>
+            <div class="vignettes">
+                <a href="https://www.slrb-bghm.brussels/fr/devenir-locataire" target="_blank">
+                    <img src="../images/slrb.png" alt="SLRB">
+                    <p>SLRB</p>
+                </a>
+                <a href="https://logementbruxellois.be/candidat-locataire/" target="_blank">
+                    <img src="../images/logbxl.png" alt="Logement Bruxellois">
+                    <p>Logement Bruxellois</p>
+                </a>
+            </div>
+        </section>
+</br>
+        <section class="section">
+            <h2>2. Agences immobilières</h2>
+            <div class="vignettes">
+                <a href="https://www.espaceimmobrussels.be/fr/nos-biens/a-louer/" target="_blank">
+                    <img src="../images/espace.png" alt="Espace Immo">
+                    <p>Espace Immo</p>
+                </a>
+            </div>
+        </section>
+</br>
+        <section class="section">
+            <h2>3. Location entre particuliers</h2>
+            <div class="vignettes">
+                <a href="https://www.rentola.be/" target="_blank">
+                    <img src="../images/rentola.png" alt="Rentola">
+                    <p>Rentola</p>
+                </a>
+                <a href="https://www.realo.be/" target="_blank">
+                    <img src="../images/realo.png" alt="Realo">
+                    <p>Realo</p>
+                </a>
+                <a href="https://www.immoweb.be/" target="_blank">
+                    <img src="../images/immoweb.png" alt="Immoweb">
+                    <p>Immoweb</p>
+                </a>
+            </div>
+        </section>
+</br>
+        <section class="section">
+            <h2>4. Autres pistes</h2>
+            <div class="vignettes">
+                <a href="https://www.kotplanet.be/" target="_blank">
+                    <img src="../images/kot.png" alt="KotPlanet">
+                    <p>Colocation</p>
+                </a>
+            </div>
+            <p>Bourses d’habitation : Dépendent des entreprises ou écoles.</p>
+            <p>Réseau personnel : Utiliser les réseaux sociaux ou demander autour de soi.</p>
+        </section>
+    </div>
+</body>
+</html>
